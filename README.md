@@ -43,7 +43,7 @@ Coming Soon:
 🛠 Tools & Technologies
 
 Development & No-Code Tools:
-Replit, Airtable, Zapier, Figma
+Replit
 
 APIs:
 The Movie Database (TMDB)
