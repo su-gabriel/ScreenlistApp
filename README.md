@@ -9,6 +9,7 @@ This project was built as part of the Master of Management program at the Haskay
 🌟 Live Demo
 
 Try the prototype: http://screenlist.replit.app
+
 Watch our demo video: https://youtu.be/XCShkx14DDQ
 
 ⸻
