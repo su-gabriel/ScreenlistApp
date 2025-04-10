@@ -67,6 +67,7 @@ AI played a critical role from day one. We used it to:
 Working with AI was an exercise in creativity, precision, and constant improvement.
 
 ⸻
+
 Team
 
 This project was created by Master of Management students at the Haskayne School of Business, University of Calgary, as a final project for ENTI 674.
