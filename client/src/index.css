@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 96%;
+    
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 96%;
+    
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 96%;
+    
+    --primary: 231 47% 30%;
+    --primary-foreground: 0 0% 96%;
+    
+    --secondary: 0 76% 40%;
+    --secondary-foreground: 0 0% 96%;
+    
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 70%;
+    
+    --accent: 45 100% 50%;
+    --accent-foreground: 0 0% 7%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 96%;
+    
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 0 0% 18%;
+    
+    --chart-1: 231 47% 30%;
+    --chart-2: 0 76% 40%;
+    --chart-3: 45 100% 50%;
+    --chart-4: 262 83% 58%;
+    --chart-5: 191 91% 37%;
+    
+    --sidebar-background: 0 0% 12%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 231 47% 30%;
+    --sidebar-primary-foreground: 0 0% 96%;
+    --sidebar-accent: 45 100% 50%;
+    --sidebar-accent-foreground: 0 0% 7%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 0 0% 18%;
+    
+    --radius: 0.5rem;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  /* Retro movie theme styling */
+  h1, h2, h3 {
+    @apply font-heading font-bold;
+  }
+  
+  /* Custom shadows */
+  .retro-shadow {
+    box-shadow: 5px 5px 0px rgba(183, 28, 28, 0.6);
+  }
+  
+  /* Card hover effects */
+  .show-card {
+    transition: all 0.3s ease;
+  }
+  
+  .show-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Streaming badge hover */
+  .streaming-badge {
+    transition: all 0.3s ease;
+  }
+  
+  .streaming-badge:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Insight card styling */
+  .insight-card {
+    @apply bg-gradient-to-br from-zinc-900 to-zinc-800;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary));
+  }
+}
+
+/* Font imports */
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/bebasneue-regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+.font-display {
+  font-family: 'Bebas Neue', system-ui, sans-serif;
+}
+
+.font-heading {
+  font-family: 'Montserrat', system-ui, sans-serif;
+}
